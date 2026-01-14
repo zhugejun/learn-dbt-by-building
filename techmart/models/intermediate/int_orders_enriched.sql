@@ -25,7 +25,7 @@ select
   o.order_status,
   o.shipping_method,
   o.is_completed,
-  coalesce(ot.total_items, 0) as total_items,
+  coalesce(ot.total_items, 0) as total_line_items,
   coalesce(ot.total_units, 0) as total_units,
   coalesce(ot.gross_total, 0) as gross_total,
   coalesce(ot.total_discount, 0) as total_discount,
