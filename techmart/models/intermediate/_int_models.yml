@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: int_orders_enriched
+    description: Orders enriched with line item totals and value tiers
+    columns:
+      - name: order_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+  - name: int_customer_orders
+    description: Customer-level order aggregations
+    columns:
+      - name: customer_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null

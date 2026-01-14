@@ -9,10 +9,7 @@ renamed as (
         cast(order_date as date) as order_date,
         status as order_status,
         shipping_method,
-        case 
-            when status = 'completed' then true
-            else false
-        end as is_completed
+        coalesce(status = 'completed', false) as is_completed
     from source
 )
 

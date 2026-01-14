@@ -141,7 +141,8 @@ Seeds are CSV files that dbt loads into your warehouse. Perfect for reference da
 
 ### Create the seed files:
 
-**seeds/raw_customers.csv**
+#### seeds/raw_customers.csv
+
 ```csv
 customer_id,first_name,last_name,email,created_at,country
 1,John,Doe,john.doe@email.com,2023-01-15,USA
@@ -156,7 +157,8 @@ customer_id,first_name,last_name,email,created_at,country
 10,Helen,Anderson,helen.a@email.com,2023-10-25,France
 ```
 
-**seeds/raw_products.csv**
+#### seeds/raw_products.csv
+
 ```csv
 product_id,product_name,category,price,cost,supplier_id
 101,Wireless Mouse,Electronics,29.99,12.00,1
@@ -171,7 +173,8 @@ product_id,product_name,category,price,cost,supplier_id
 110,Phone Stand,Accessories,19.99,8.00,3
 ```
 
-**seeds/raw_orders.csv**
+#### seeds/raw_orders.csv
+
 ```csv
 order_id,customer_id,order_date,status,shipping_method
 1001,1,2024-01-05,completed,standard
@@ -191,7 +194,8 @@ order_id,customer_id,order_date,status,shipping_method
 1015,4,2024-02-12,returned,express
 ```
 
-**seeds/raw_order_items.csv**
+#### seeds/raw_order_items.csv
+
 ```csv
 order_item_id,order_id,product_id,quantity,unit_price,discount_percent
 1,1001,101,2,29.99,0
@@ -218,7 +222,7 @@ order_item_id,order_id,product_id,quantity,unit_price,discount_percent
 22,1015,102,1,89.99,0
 ```
 
-### Load the seeds:
+### Load the seeds
 
 ```bash
 dbt seed
@@ -229,13 +233,14 @@ dbt seed
 ## Part 4: Building Staging Models
 
 Staging models are 1:1 with source tables. They handle:
+
 - Renaming columns to consistent conventions
 - Casting data types
 - Basic cleaning
 
-### Create the folder structure:
+### Create the folder structure
 
-```
+```text
 models/
 ├── staging/
 │   ├── _stg_sources.yml

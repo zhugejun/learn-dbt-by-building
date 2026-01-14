@@ -1,5 +1,5 @@
 with source as (
-  SELECT * FROM {{ source('raw', 'raw_products') }}
+    select * from {{ source('raw', 'raw_products') }}
 ),
 
 renamed as (
@@ -10,8 +10,8 @@ renamed as (
         cast(price as decimal(10, 2)) as price,
         cast(cost as decimal(10, 2)) as cost,
         cast(price - cost as decimal(10, 2)) as profit_margin,
-        round((price - cost) / price * 100, 2) as profit_margin_percent,
-        supplier_id
+        supplier_id,
+        round((price - cost) / price * 100, 2) as profit_margin_percent
     from source
 )
 
