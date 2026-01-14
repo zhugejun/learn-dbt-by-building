@@ -29,6 +29,7 @@ models:
       - name: price
         tests:
           - not_null
+          - positive_value
       - name: profit_margin
         description: Price minus cost
   
