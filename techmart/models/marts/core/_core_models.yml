@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
       - name: customer_segment
-        description: "Customer value segment: VIP, Regular, New, or Prospect"
+        description: "{{ doc('customer_segment') }}"
         tests:
           - accepted_values:
               values: ['VIP', 'Regular', 'New', 'Prospect']
