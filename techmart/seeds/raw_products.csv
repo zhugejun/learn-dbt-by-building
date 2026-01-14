@@ -1,0 +1,11 @@
+product_id,product_name,category,price,cost,supplier_id
+101,Wireless Mouse,Electronics,29.99,12.00,1
+102,Mechanical Keyboard,Electronics,89.99,45.00,1
+103,USB-C Hub,Electronics,49.99,22.00,2
+104,Monitor Stand,Accessories,39.99,18.00,3
+105,Laptop Sleeve,Accessories,24.99,10.00,3
+106,Webcam HD,Electronics,79.99,35.00,2
+107,Desk Lamp,Office,34.99,15.00,4
+108,Notebook Set,Office,12.99,5.00,4
+109,Wireless Charger,Electronics,29.99,14.00,1
+110,Phone Stand,Accessories,19.99,8.00,3

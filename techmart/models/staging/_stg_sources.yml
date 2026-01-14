@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw TechMart data loaded from seeds
+    schema: main
+    tables:
+      - name: raw_customers
+        description: Customer information
+        columns:
+          - name: customer_id
+            description: Primary key
+            tests:
+              - unique
+              - not_null
+      - name: raw_products
+        description: Product catalog
+      - name: raw_orders
+        description: Order headers
+      - name: raw_order_items
+        description: Order line items

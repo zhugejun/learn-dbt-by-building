@@ -1,0 +1,16 @@
+order_id,customer_id,order_date,status,shipping_method
+1001,1,2024-01-05,completed,standard
+1002,2,2024-01-06,completed,express
+1003,1,2024-01-10,completed,standard
+1004,3,2024-01-12,completed,express
+1005,4,2024-01-15,completed,standard
+1006,5,2024-01-18,cancelled,standard
+1007,2,2024-01-20,completed,express
+1008,6,2024-01-22,completed,standard
+1009,7,2024-01-25,completed,express
+1010,3,2024-01-28,pending,standard
+1011,8,2024-02-01,completed,express
+1012,9,2024-02-05,completed,standard
+1013,1,2024-02-08,completed,express
+1014,10,2024-02-10,completed,standard
+1015,4,2024-02-12,returned,express
