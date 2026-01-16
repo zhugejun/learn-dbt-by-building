@@ -2,4 +2,5 @@
   "[sql]": {
     "editor.formatOnSave": false
   },
+  "dbt.enableNewLineagePanel": true,
 }
